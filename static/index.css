@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: content-box
+}
+
+body{
+    background-color: rgb(242, 237, 231);
+    color: rgb(42, 40, 40);
+    font-family: "Merriweather", serif; 
+}
+
+h1{
+    padding: 3rem;
+    background-color: rgb(126, 112, 94);
+    color: rgb(242, 237, 231);
+    text-align: center;
+}
+
+h3{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    padding: 1rem;
+    background-color: rgb(220, 207, 193);
+    color:rgb(42, 40, 40) ;
+
+}
+
+label{
+    margin-inline-start: 1rem;
+    padding: 0.5rem;
+}
+
+input{
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border: 1px solid  rgb(86, 77, 64);
+    border-radius: 5px;
+    background-color: transparent;
+}
+input[type="text"]{
+    width: 95%;
+}
+
+input[type="submit"] {
+    width: 20%;
+    margin-left: 40%;
+    background-color: rgb(220, 207, 193);
+    color:  rgb(86, 77, 64);
+}
+
+input [type="radio"]{
+    color: rgb(86, 77, 64);
+}
+
+#atividade1 {
+    height: 5rem;
+}
+
+select {
+    cursor: pointer;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    color: 86,77,64;
+    width: 75%;
+    border: 1px solid  rgb(86, 77, 64);
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+a {
+    color:  rgb(86, 77, 64);
+    font-size: 25px;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 3rem;
+}

@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Formulário de Perícia</title>
+    <link rel="stylesheet" href="../static/index.css">
+  </head>
+  <body>
+    <h1>Formulário de Perícia</h1>
+    
+    <form action="/form" method="post" id="form">
+        <h3> Perícia </h3>
+
+    <label for="vara_federal"> Vara Federal:</label>
+    <input type="text" id="vara_federal" name="vara_federal" class="inputform" placeholder="Digite a Vara Federal" /><br/>
+    
+    <label for="sejud"> SEJUD:</label>
+    <input type="text" id="sejud" name="sejud" class="inputform" placeholder="Digite SEJUD"/><br/>
+
+    <label for="vara_trabalho"> Vara de trabalho:</label>
+    <input type="text" id="vara_trabalho" name="vara_trabalho" class="inputform" placeholder="Digite a Vara de trabalho"/><br/>
+
+    <label for="data_perecia"> Data da perícia:</label>
+    <input id="data_pericia" name="data_pericia" type="date" class="inputform" /><br/>
+
+    <label for="tipo_pericia"> Tipo de Perícia:</label>
+    <select name="tipo_pericia">
+        <option selected disabled=" ">Escolha a opção desejada</option>
+        <option value="Abono Permanencia" class="inputform">Abono de Permanencia</option>
+        <option value="Aposentadoria Especial" class="inputform">Aposentadoria especial</option>
+        <option value="Gratificação RX" class="inputform">Gratificação RX</option>
+        <option value="Insalubridade"class="inputform">Insalubridade</option>
+        <option value="Periculosidade" class="inputform">Periculosidade</option>
+        <option value="Radiacao Ionizante" class="inputform">Radiação Ionizante</option>
+        <option value="Redução da Carga Horaria" class="inputform">Redução da carga horária</option>
+    </select><br/>
+
+    <label for="end"> Endereço:</label>
+    <input type="text" id="end" name="end" class="inputform" placeholder="Digite o endereço"/><br/>
+
+    <label for="data_ing_re"> Data de ingresso do autor na parte ré:</label>
+    <input id="data_ing_re" type="date" name="data_ing_re" class="inputform" /><br/>
+    
+    <label for="data_setor_a"> Data de ingresso do autor no setor atual:</label>
+    <input id="data_setor_a" type="date" name="data_setor_a" class="inputform" /><br/>
+
+    <label for="carga_horaria"> Carga horária:</label>
+    <input type="text" id="carga_horaria" name="carga_horaria" class="inputform" placeholder="Digite a carga horaria"/><br/>
+    
+    <h3> Atividade </h3>
+
+    <label for="atividade"> Atividade:</label><br/>
+    <input type="text" id="atividade1" name="atividade1" class="inputform" placeholder="Digite a atividade"/><br/>
+
+
+    <h3> Medições </h3>
+ 
+    <!--fatores de risco-->
+    <p for="fatores_risco"> Fatores de risco:</p><br>
+
+    <!--Agente Biologico--> 
+    <label for="agente_bio">Agente biológico:</label>
+    <input type="radio" id="agente_bio" class="inputform" name="agente_bio" value="Sim">
+    <label for="fagente_bio"> SIM</label>
+    <input type="radio" id="agente_bio" class="inputform" name="agente_bio" value="Não">
+    <label for="fatores_risco"> NÃO</label><br/>
+
+    <label for="t_agente_bio">Qual tipo:</label>
+    <input type="text" id="t_agente_bio" name="t_agente_bio" class="inputform" placeholder="Digite o tipo de agente biológico"/><br/>
+
+    <label for="agente_bio_qual">Qualitativa:</label>
+    <input type="text" id="agente_bio_qual" name="agente_bio_qual" class="inputform" placeholder="Digite a qualitativa"/><br/><br/>
+
+        <!--Agente Fisico--> 
+        <label for="agente_fis"> Agente Físico:</label>
+        <input type="radio" id="agente_fis" class="inputform" name="agente_fis" value="Sim">
+        <label for="agente_fis"> SIM</label>
+        <input type="radio" id="agente_fis" class="inputform" name="agente_fis" value="Não">
+        <label for="agente_fis"> NÃO</label><br/>
+    
+        <label for="t_agente_fis">Qual tipo:</label>
+        <input type="text" id="t_agente_fis" name="t_agente_fis" class="inputform" placeholder="Digite o tipo de agente físico"/><br/>
+    
+        <label for="agente_fis_qual">Qualitativa:</label>
+        <input type="text" id="agente_fis_qual" name="agente_fis_qual" class="inputform" placeholder="Digite a qualitativa"/><br/>
+    
+        <label for="agente_fis_quant">Quantitativa:</label>
+        <input type="text" id="agente_fis_quant" name="agente_fis_quant" class="inputform" placeholder="Digite a quantitativa" /><br/><br/>
+    
+
+    <!--Agente quimico--> 
+    <label for="agente_quim"> Agente quimico:</label>
+    <input type="radio" id="agente_quim" class="inputform" name="agente_quim" value="Sim">
+    <label for="agente_quim"> SIM</label>
+    <input type="radio" id="agente_quim" class="inputform" name="agente_quim" value="Não">
+    <label for="agente_quim"> NÃO</label><br/>
+
+    <label for="t_agente_quim">Qual tipo:</label>
+    <input type="text" id="t_agente_quim" name="t_agente_quim" class="inputform" placeholder="Digite o tipo de agente químico"/><br/>
+
+    <label for="agente_quim_qual">Qualitativa:</label>
+    <input type="text" id="agente_quim_qual" name="agente_quim_qual" class="inputform" placeholder="Digite a qualitativa"/><br/>
+
+    <label for="agente_quim_quant">Quantitativa:</label>
+    <input type="text" id="agente_quim_quant" name="agente_quim_quant" class="inputform" placeholder="Digite a quantitativa" /><br/><br/>
+
+   <!--Periculosidade--> 
+   <label for="periculosidade"> Periculosidade:</label>
+   <input type="radio" id="periculosodade" class="inputform" name="periculosodade" value="sim">
+   <label for="periculosodade"> SIM</label>
+   <input type="radio" id="periculosodade" class="inputform" name="periculosodade" value="nao">
+   <label for="periculosodade"> NÃO</label><br/>
+
+   <label for="t_periculosodade">Qual tipo:</label>
+   <input type="text" id="t_periculosodade" name="t_periculosodade" class="inputform" placeholder="Digite o tipo de periculosidade"  />
+
+
+    <h3> Equipamentos de Proteção Individual</h3>
+
+ <!--Máscara cirúrgica--> 
+ <label for="masc_cirg"> Máscara Cirurgica:</label>
+ <input type="radio" id="masc_cirg" class="inputform" name="masc_cirg" value="Sim">
+ <label for="masc_cirg"> SIM</label>
+ <input type="radio" id="masc_cirg" class="inputform" name="masc_cirg" value="Não">
+ <label for="masc_cirg"> NÃO</label><br/>
+
+ <label for="masc_cirg_ca"> C.A:</label>
+ <input type="text" id="masc_cirg_ca" name="masc_cirg_ca" class="inputform" placeholder="Digite o certificado de aprovação"/><br/><br/>
+
+ <!--Máscara N95--> 
+ <label for="masc_n95"> Máscara N95:</label>
+ <input type="radio" id="masc_n95" class="inputform" name="masc_n95" value="Sim">
+ <label for="masc_n95"> SIM</label>
+ <input type="radio" id="masc_n95" name="masc_n95" class="inputform" name="masc_n95" value="Não">
+ <label for="masc_n95"> NÃO</label><br/>
+
+ <label for="masc_n95_ca"> C.A:</label>
+ <input type="text" id="masc_n95_ca" name="masc_n95_ca" class="inputform" placeholder="Digite o certificado de aprovação"/><br/><br/>
+
+<!--Face Shield--> 
+<label for="face_shield"> Face Shield:</label>
+<input type="radio" id="face_shield" class="inputform" name="face_shield" value="Sim">
+<label for="face_shield"> SIM</label>
+<input type="radio" id="face_shield" name="face_shield" class="inputform" name="face_shield" value="Não">
+<label for="face_shield"> NÃO</label><br/>
+
+<label for="face_shield_ca"> C.A:</label>
+<input type="text" id="face_shield_ca" name="face_shield_ca" class="inputform" placeholder="Digite o certificado de aprovação" /><br/><br/>
+
+<!--Oculos de proteção--> 
+<label for="oculos_pro"> Oculos de proteção:</label>
+<input type="radio" id="oculos_pro" class="inputform" name="oculos_pro" value="Sim">
+<label for="oculos_pro"> SIM</label>
+<input type="radio" id="oculos_pro" class="inputform" name="oculos_pro" value="Não">
+<label for="oculos_pro"> NÃO</label><br/>
+
+<label for="oculos_pro_ca"> C.A:</label>
+<input type="text" id="oculos_pro_ca" name="oculos_pro_ca" class="inputform" placeholder="Digite o certificado de aprovação"/><br/><br/>
+
+<!--Luva de procedimento--> 
+<label for="luva_proc"> Luva de procedimento:</label>
+<input type="radio" id="luva_proc" class="inputform" name="luva_proc" value="Sim">
+<label for="luva_proc"> SIM</label>
+<input type="radio" id="luva_proc" class="inputform" name="luva_proc" value="Não">
+<label for="luva_proc"> NÃO</label><br/>
+
+<label for="luva_proc_ca"> C.A:</label>
+<input type="text" id="luva_proc_ca" name="luva_proc_ca" class="inputform" placeholder="Digite o certificado de aprovação"/><br/><br/>
+
+<!--Luva estéril--> 
+<label for="luva_esteril"> Luva Estéril:</label>
+<input type="radio" id="luva_esteril" class="inputform" name="luva_esteril" value="Sim">
+<label for="epi_s"> SIM</label>
+<input type="radio" id="luva_esteril" class="inputform" name="luva_esteril" value="Não">
+<label for="luva_esteril"> NÃO</label><br/>
+
+<label for="luva_esteril_ca"> C.A:</label>
+<input type="text" id="luva_esteril_ca" name="luva_esteril_ca" class="inputform" placeholder="Digite o certificado de aprovação"/><br/><br/>
+
+<!--Capote Plumbífero--> 
+<label for="capote_plumb"> Capote Plumbífero:</label>
+<input type="radio" id="capote_plumb" class="inputform" name="capote_plumb" value="Sim">
+<label for="capote_plumb"> SIM</label>
+<input type="radio" id="capote_plumb" class="inputform" name="capote_plumb" value="Não">
+<label for="capote_plumb"> NÃO</label><br/>
+
+<label for="capote_plumb_ca"> C.A:</label>
+<input type="text" id="capote_plumb_ca" name="capote_plumb_ca" class="inputform" placeholder="Digite o certificado de aprovação"/><br/><br/>
+
+<!--Protetor de tireoide--> 
+<label for="protetor_tireoide"> Protetor de tireoide:</label>
+<input type="radio" id="protetor_tireoide" class="inputform" name="prot_tireoide_s/n" value="Sim">
+<label for="protetor_tireoide"> SIM</label>
+<input type="radio" id="protetor_tireoide" class="inputform" name="protetor_tireoide" value="Não">
+<label for="protetor_tireoide"> NÃO</label><br/>
+
+<label for="protetor_tireoide_ca"> C.A:</label>
+<input type="text" id="protetor_tireoide_ca" name="protetor_tireoide_ca" class="inputform" placeholder="Digite o certificado de aprovação"/><br/><br/>
+
+<!--Abafador de ruido--> 
+<label for="abaf_ruido"> Abafador de ruido:</label>
+<input type="radio" id="abaf_ruido" class="inputform" name="abaf_ruido" value="Sim">
+<label for="epi_s/n"> SIM</label>
+<input type="radio" id="abaf_ruido" class="inputform" name="abaf_ruido" value="Não">
+<label for="abaf_ruido"> NÃO</label><br/>
+
+<label for="abaf_ruido_ca"> C.A:</label>
+<input type="text" id="abaf_ruido_ca" name="abaf_ruido_ca" class="inputform" placeholder="Digite o certificado de aprovação"/><br/><br/>
+
+<!--Abafador de ruido--> 
+<label for="pro_aur"> Protetor Auricular:</label>
+<input type="radio" id="pro_aur" class="inputform" name="pro_aur" value="Sim">
+<label for="epi_s/n"> SIM</label>
+<input type="radio" id="pro_aur" class="inputform" name="pro_aur" value="Não">
+<label for="pro_aur"> NÃO</label><br/>
+
+<label for="pro_aur_ca"> C.A:</label>
+<input type="text" id="pro_aur_ca" name="pro_aur_ca" class="inputform" placeholder="Digite o certificado de aprovação"/><br/><br/>
+
+<!--Avental impermeável--> 
+<label for="avental_imperm"> Avental impermeável:</label>
+<input type="radio" id="avental_imperm" class="inputform" name="avental_imperm" value="Sim">
+<label for="epi_s/n"> SIM</label>
+<input type="radio" id="avental_imperm" class="inputform" name="avental_imperm" value="Não">
+<label for="avental_imperm"> NÃO</label><br/>
+
+<label for="avental_imperm_ca"> C.A:</label>
+<input type="text" id="avental_imperm_ca" name="avental_imperm_ca" class="inputform" placeholder="Digite o certificado de aprovação"/><br/><br/>
+
+<!--Luva de Latex de cano curto - cor Amarela--> 
+<label for="luv_ltx_c_amar"> Luva de Latex de cano curto - cor Amarela:</label>
+<input type="radio" id="luv_ltx_c_amar" class="inputform" name="luv_ltx_c_amar" value="Sim">
+<label for="luv_ltx_c_amar"> SIM</label>
+<input type="radio" id="luv_ltx_c_amar" class="inputform" name="luv_ltx_c_amar" value="Não">
+<label for="luv_ltx_c_amar"> NÃO</label><br/>
+
+<label for="luv_ltx_c_amar_ca"> C.A:</label>
+<input type="text" id="luv_ltx_c_amar_ca" name="luv_ltx_c_amar_ca" class="inputform" placeholder="Digite o certificado de aprovação"/><br/><br/>
+
+<!--Luva de Latex de cano longo - cor Amarela--> 
+<label for="luv_ltx_l_amar"> Luva de Latex de cano curto - cor Amarela:</label>
+<input type="radio" id="luv_ltx_l_amar" class="inputform" name="luv_ltx_l_amar" value="Sim">
+<label for="luv_ltx_l_amar"> SIM</label>
+<input type="radio" id="luv_ltx_l_amar" class="inputform" name="luv_ltx_l_amar" value="Não">
+<label for="luv_ltx_l_amar"> NÃO</label><br/>
+
+<label for="luv_ltx_l_amar_ca"> C.A:</label>
+<input type="text" id="luv_ltx_l_amar_ca" name="luv_ltx_l_amar_ca" class="inputform" placeholder="Digite o certificado de aprovação"/><br/><br/>
+
+<!--Luva de Latex de cano curto - cor verde--> 
+<label for="luv_ltx_c_ver"> Luva de Latex de cano curto - cor Verde:</label>
+<input type="radio" id="luv_ltx_c_ver" class="inputform" name="luv_ltx_c_ver" value="Sim">
+<label for="luv_ltx_c_ver"> SIM</label>
+<input type="radio" id="luv_ltx_c_ver" class="inputform" name="luv_ltx_c_ver" value="Não">
+<label for="luv_ltx_c_ver"> NÃO</label><br/>
+
+<label for="luv_ltx_c_ver_ca"> C.A:</label>
+<input type="text" id="luv_ltx_c_ver_ca" name="luv_ltx_c_ver_ca" class="inputform" placeholder="Digite sua resposta" /><br/><br/>
+
+<!--Luva de Latex de cano longo - cor verde--> 
+<label for="luv_ltx_l_ver"> Luva de Latex de cano curto - cor Verde:</label>
+<input type="radio" id="luv_ltx_l_ver" class="inputform" name="luv_ltx_l_ver" value="Sim">
+<label for="luv_ltx_l_ver"> SIM</label>
+<input type="radio" id="luv_ltx_l_ver" class="inputform" name="luv_ltx_l_ver" value="Não">
+<label for="luv_ltx_l_ver"> NÃO</label><br/>
+
+<label for="luv_ltx_l_ver_ca"> C.A:</label>
+<input type="text" id="luv_ltx_l_ver_ca" name="luv_ltx_l_ver_ca" class="inputform" placeholder="Digite o certificado de aprovação" /><br/><br/>
+
+<!--Luva de Latex de cano curto - cor Azul--> 
+<label for="luv_ltx_c_az"> Luva de Latex de cano curto - cor Azul:</label>
+<input type="radio" id="luv_ltx_c_az" class="inputform" name="luv_ltx_c_az" value="Sim">
+<label for="epi_s/n"> SIM</label>
+<input type="radio" id="luv_ltx_c_az" class="inputform" name="luv_ltx_c_az" value="Não">
+<label for="luv_ltx_c_az"> NÃO</label><br/>
+
+<label for="luv_ltx_c_az_ca"> C.A:</label>
+<input type="text" id="luv_ltx_c_az_ca" name="luv_ltx_c_az_ca" class="inputform" placeholder="Digite o certificado de aprovação"/><br/><br/>
+
+<!--Luva de Latex de cano longo - cor Azul--> 
+<label for="luv_ltx_l_az"> Luva de Latex de cano curto - cor Amarela:</label>
+<input type="radio" id="luv_ltx_l_az" class="inputform" name="luv_ltx_l_az" value="Sim">
+<label for="luv_ltx_l_az"> SIM</label>
+<input type="radio" id="luv_ltx_l_az" class="inputform" name="luv_ltx_l_az" value="Não">
+<label for="luv_ltx_l_az"> NÃO</label><br/>
+
+<label for="luv_ltx_l_az_ca"> C.A:</label>
+<input type="text" id="luv_ltx_l_az_ca" name="luv_ltx_l_az_ca" class="inputform" placeholder="Digite o certificado de aprovação" /><br/><br/>
+
+<!--Bota de segurança--> 
+<label for="bota_seg"> Bota de segurança:</label>
+<input type="radio" id="bota_seg" class="inputform" name="bota_seg" value="Sim">
+<label for="bota_seg"> SIM</label>
+<input type="radio" id="bota_seg" class="inputform" name="bota_seg" value="Não">
+<label for="bota_seg"> NÃO</label><br/>
+
+<label for="bota_seg_ca"> C.A:</label>
+<input type="text" id="bota_seg_ca" name="bota_seg_ca" class="inputform" placeholder="Digite certificado de aprovação" /><br/><br/>
+
+<!--Máscara PFF2--> 
+<label for="masc_pff2"> Máscara PFF2:</label>
+<input type="radio" id="masc_pff2" class="inputform" name="masc_pff2" value="Sim">
+<label for="masc_pff2"> SIM</label>
+<input type="radio" id="masc_pff2" class="inputform" name="masc_pff2" value="Não">
+<label for="masc_pff2"> NÃO</label><br/>
+
+<label for="masc_pff2_ca"> C.A:</label>
+<input type="text" id="masc_pff2_ca" name="masc_pff2_ca" class="inputform" placeholder="Digite o certificado de aprovação"/><br/>
+
+<h3> Nome do arquivo </h3>
+
+<label for="novo_documento">Digite o nome do arquivo para salvar</label>
+<input type="text" id="novo_documento" name="novo_documento" placeholder="Nome do arquivo" required>    
+
+
+<input type="submit" value="Enviar para o documento" class="inputform" id="submitbutton">
+
+</form>
+
+  </body>
+</html>
