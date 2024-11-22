@@ -154,6 +154,6 @@ def formatar_data(data):
     return datetime.strptime(data, "%Y-%m-%d").strftime("%d-%m-%Y") if data else None
 
 if __name__ == '__main__':
-    app.run(debug=True, port=5500)
+    app.run(port=5500)
 
 
